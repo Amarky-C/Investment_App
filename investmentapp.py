@@ -17,7 +17,7 @@ def investment():
        print('Welcome!', name_of_investor, 'to Cohort 4 Investment application')
        wallet = int(input("Enter your investment amount here: N "))
        interest_calc = wallet * Profit_percentage / 100
-        wallet_balance = wallet + interest_calc    
+       wallet_balance = wallet + interest_calc    
        print(name_of_investor,'Your wallet has been credited with the sum of:','N', wallet_balance,"with a 50% interest on your capital")
        withdrawal_amount = int(input("Enter amount you want to withdraw: N"))
        if withdrawal_amount >= wallet_balance :
