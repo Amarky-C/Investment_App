@@ -27,5 +27,5 @@ def investment():
            final_wallet_balance = wallet_balance - withdrawal_amount
            vat_calc = final_wallet_balance * Vat_percentage /100
            final_balance = final_wallet_balance - vat_calc   
-           print(name_of_investor,"your withdrawal transaction was successful and your account has been debited with:",'N', withdrawal_amount , "and a 7% service charge has been deducted and ",'your final balance is:' ,'N', final_balance)
+           print(name_of_investor,"your withdrawal transaction was successful and your account has been debited with:",'N', withdrawal_amount , "and a 7% service charge", vat_calc, "has been deducted and ", 'your final balance is:' ,'N', final_balance)
 investment()
